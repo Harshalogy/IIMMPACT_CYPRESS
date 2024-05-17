@@ -1,0 +1,26 @@
+{
+  "name": "cypress_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports": "rimraf cypress/reports/ && rimraf mochawesome_report.json && rimraf reports/ && rimraf cypress/screenshots/",
+    "cypress:run": "cypress run",
+    "postcypress:run": "npm run report:merge && npm run report:generate",
+    "report:merge": "mochawesome-merge cypress/reports/*.json > mochawesome_report.json",
+    "report:generate": "marge mochawesome_report.json -f report -o reports"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.8.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "pg": "^8.11.5"
+  }
+}

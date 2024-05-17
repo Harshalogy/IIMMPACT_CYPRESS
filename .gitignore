@@ -1,0 +1,32 @@
+# Cypress directories
+cypress/reports/
+cypress/screenshots/
+cypress/videos/
+cypress/fixtures/
+reports/
+mochawesome_report.json 
+
+# Environment variables
+.env
+
+# Dependency folders
+node_modules/
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Build artifacts
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Other potential files/folders
+*.log
+*.tmp
+*.pid
+*.seed
+*.cache
