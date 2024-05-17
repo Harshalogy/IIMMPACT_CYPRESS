@@ -1,0 +1,13 @@
+[
+  {
+    "user_credits_history_id": 3683,
+    "user_id": 2,
+    "order_id": 2685,
+    "credit_points": 200,
+    "user_balance": 94949,
+    "created_at": "2024-04-29T07:53:59.254Z",
+    "transaction_id": 711,
+    "remarks": null,
+    "payment_status_id": null
+  }
+]
